@@ -1,0 +1,41 @@
+#lists
+heights = [61, 70, 67, 64, 65]
+
+broken_heights = [65, 71, 59, 62]
+
+
+orders = ["daisies", "periwinkle"]
+#appending a new element 
+orders.append("tulips")
+orders.append("roses")
+
+print(orders)
+
+#growing a list
+orders = ["daisy", "buttercup", "snapdragon", "gardenia", "lily"]
+
+# Create new orders here:
+new_orders = ["lilac", "iris"]
+
+orders_combined = orders + new_orders
+
+broken_prices = [5, 3, 4, 5, 4] + [4]
+
+#remove from list
+
+order_list = ["Celery", "Orange Juice", "Orange", "Flatbread"]
+order_list.remove("Flatbread")
+
+print(order_list)
+#shrinking a list
+# Your code below: 
+
+order_list = ["Celery", "Orange Juice", "Orange", "Flatbread"]
+order_list.remove("Flatbread")
+
+print(order_list)
+
+
+new_store_order_list = ["Orange", "Apple", "Mango", "Broccoli", "Mango"]
+new_store_order_list.remove("Mango")
+print(new_store_order_list)
