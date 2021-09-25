@@ -1,0 +1,55 @@
+#concatenating strings 
+
+
+string1 = "I am "
+string2 = "connecting"
+string3 = "strings."
+
+connectedStrings = string1 + string2 + string3
+
+print(connectedStrings)
+
+
+#updating the value of a variable 
+
+total_price = 0
+
+new_sneakers = 50.00
+
+total_price += new_sneakers
+
+nice_sweater = 39.00
+fun_books = 20.00
+# Update total_price here:
+total_price += nice_sweater + fun_books
+
+print("The total price is", total_price)
+
+#multiline strings
+to_you = """
+Stranger, if you passing meet me and desire to speak to me, why should you not speak to me?
+And why should I not speak to you? 
+"""
+
+
+print(to_you)
+
+
+
+
+
+#prinitng my initials 
+first = """ 
+v    v   dddd
+v    v   d  d
+v    v   d  d
+v    v   d  d
+v    v   d  d
+ v v     d  d
+  v      dddd
+"""
+
+#Veronica Doak
+#Iloveboxing. 
+
+print(first)
