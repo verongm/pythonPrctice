@@ -1,0 +1,28 @@
+#booleanNotOperators 9/12
+statement_one = False
+
+statement_two = True
+
+credits = 120
+gpa = 1.8
+
+if not credits >= 120:
+  print("You do not have enough credits to graduate.")
+if not gpa >= 2.0:
+  print("Your GPA is not high enough to graduate.")
+if not (credits >= 120) and  not (gpa >= 2.0):
+    print("You do not meet either requirement to graduate!")
+
+#else and elif statements
+grade = 86
+
+if grade >= 90:
+  print("A")
+elif grade >= 80:
+  print("B")
+elif grade >= 70:
+  print("C")
+elif grade >= 60:
+  print("D")
+else:
+  print("F")
