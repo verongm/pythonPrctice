@@ -1,0 +1,52 @@
+#import regex for regular expression
+import re
+from collections import counter 
+import csv
+
+
+# creating a function 
+def readFile(apache.txt):
+#open a log file and read log 
+	with open(apache.txt) as f:
+		log = f.read()
+		print(log)
+		
+		#regexp is a new variable and it equals to a string  
+		#\d means a digit from 0-9
+		#using 1,3 since each ip begins with 1-3 digits, this is where pattern finding comes in
+		regexp = r'\d(1,3\.\d(1,3\.\d(1,3\.\d(1,3'
+		#regex is ready
+		
+		#creating a new variable
+		#two arguments
+		#first is a word we are searching for 
+		#regexp variable is what we're searching defined in line 15
+		#log is where awe are searching 
+		ips_list = re.findall(regexp, log
+		
+		print(ips_list)
+		
+		#you can also do return
+		
+#a count of number of requests to the website
+	
+def count(ips_list):
+	return Counter(ips_list) 
+	
+	
+	
+def write_csv(counter)
+  with open('output.csv', 'w') as csvfile
+  	write = csv.writer(csvfile)
+  	
+  	#creating headers for csv file 
+  	
+  	header = ['IP', 'frequency']
+  	writer.writerow(header)
+  	
+  	#needs dict
+  	for item in counter:
+  		writer.writerow((item, counter[item]))
+  		
+
+	write_csv(count(readFile('log')))
