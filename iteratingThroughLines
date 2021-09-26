@@ -1,0 +1,78 @@
+with open('how_many_lines.txt') as lines_doc:
+ for line in  lines_doc.readlines():
+   print(line)
+   
+   
+   
+   #read single line ata time
+   with open('just_the_first.txt') as first_line_doc:
+  first_line = first_line_doc.readline()
+  print(first_line)
+  
+  
+  #writing a file 
+  with open('bad_bands.txt', 'w') as bad_bands_doc:
+  bad_bands_doc.write("mana")
+  
+  #append a file 
+  with open('cool_dogs.txt', 'a') as cool_dogs_file:
+  cool_dogs_file.write("Air Buddy.")
+  
+  
+  #closing a file 
+  with open('fun_file.txt') as close_this_file: 
+  setup = close_this_file.readline()
+  punchline = close_this_file.readline()
+
+print(setup)
+
+#parse a csv as a string
+ith open('logger.csv') as log_csv_file:
+  print(log_csv_file.read())
+  
+  
+#reading a csv file
+import csv
+
+with open('cool_csv.csv') as cool_csv_file:
+  cool_csv_dict = csv.DictReader(cool_csv_file)
+  for row in cool_csv_dict:
+    print(row['Cool Fact'])
+    
+    #reading different types of csv files
+    
+    import csv
+
+with open('books.csv') as books_csv:
+  books_reader = csv.DictReader(books_csv, delimiter='@')
+  isbn_list = [book['ISBN'] for book in books_reader]
+  
+  
+  #writing a csv file
+  import csv
+
+with open('logger.csv', 'w') as logger_csv:
+  log_writer = csv.DictWriter(logger_csv, fieldnames=fields)
+  log_writer.writeheader()
+  for line in access_log:
+    log_writer.writerow(line)
+    
+    
+   #reading json files
+        import json
+
+with open('message.json') as message_json:
+  message = json.load(message_json)
+  print(message['text'])
+  
+  
+  #writing a json file 
+  data_payload = [
+  {'interesting message': 'What is JSON? A web application\'s little pile of secrets.',
+   'follow up': 'But enough talk!'}
+]
+
+import json
+
+with open('data.json', 'w') as data_json:
+  json.dump(data_payload, data_json)
